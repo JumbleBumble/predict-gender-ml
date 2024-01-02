@@ -11,7 +11,7 @@ setuptools.setup(
     description="Predicts gender based on name with ML Models",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/JumbleBumble/predict-gender-ml",
     packages=setuptools.find_packages(),
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -20,9 +20,9 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.8",
-	package_data={
-		'predict_gender_ml': ['*.*'],
+    package_data={
+        "predict_gender_ml": ["*.*"],
     },
     include_package_data=True,
-    install_requires=["joblib==1.3.2", "pandas==2.1.2", "torch==2.1.0"]
+    install_requires=["joblib==1.3.2", "pandas==2.1.2", "torch==2.1.0"],
 )
