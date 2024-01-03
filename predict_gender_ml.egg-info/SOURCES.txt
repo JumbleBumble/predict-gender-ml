@@ -1,7 +1,6 @@
 README.md
 setup.py
 predict_gender_ml/__init__.py
-predict_gender_ml/data.csv
 predict_gender_ml/fast_model.pth
 predict_gender_ml/predict_gender.py
 predict_gender_ml/vectorizer.joblib

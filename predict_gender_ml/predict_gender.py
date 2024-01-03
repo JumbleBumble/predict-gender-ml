@@ -65,7 +65,9 @@ def init_model(vectorizer, model_path="accurate_model.pth") -> _utils.GenderClas
     if model_path != "fast_model.pth" and not _path.exists(
         _path.join(_path.dirname(__file__), model_path)
     ):
-        logging.warning(f"predict_gender_ml: missing {model_path}, falling back to fast_model.pth")
+        logging.warning(
+            f"predict_gender_ml: missing {model_path}, falling back to fast_model.pth"
+        )
         model_path = "fast_model.pth"
     model_path = _path.join(_path.dirname(__file__), model_path)
     try:
@@ -93,7 +95,10 @@ def predict(name: str, check_csv=False, fast_model=False, model=None, vectorizer
     if check_csv:
         _, _, gender = _utils.retrieve_data(name)
         if gender != None:
-            gender = "M" if gender == 0 else "F"
+            csv_gender = "M" if gender == 0 else "F"
+            gender = PredictedGender()
+            gender.gender = csv_gender
+            gender.probability = [100,0]
             return gender
     if not vectorizer:
         vectorizer = init_vectorizer()

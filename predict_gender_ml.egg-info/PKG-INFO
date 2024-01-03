@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: predict_gender_ml
-Version: 0.1
+Version: 0.3
 Summary: Predicts gender based on name with ML Models
-Home-page: 
+Home-page: https://github.com/JumbleBumble/predict-gender-ml
 Author: Jumble
 Author-email: help@help.org
 Classifier: License :: OSI Approved :: MIT License

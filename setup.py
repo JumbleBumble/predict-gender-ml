@@ -5,7 +5,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name="predict_gender_ml",
-    version="0.1",
+    version="0.3",
     author="Jumble",
     author_email="help@help.org",
     description="Predicts gender based on name with ML Models",
